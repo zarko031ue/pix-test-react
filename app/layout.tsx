@@ -1,5 +1,4 @@
 import type { Metadata } from "next";
-import ThemeRegistry from "./ThemeRegistry";
 
 export const metadata: Metadata = {
   title: "Pix Test React",
@@ -9,9 +8,7 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en">
-      <body>
-        <ThemeRegistry>{children}</ThemeRegistry>
-      </body>
+      <body>{children}</body>
     </html>
   );
 }
